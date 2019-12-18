@@ -1,0 +1,13 @@
+par=inv          rng=inv!A2:B7        rdim=1
+par=invR         rng=invR!A2:B4       rdim=1
+par=size         rng=size!A2:B7       rdim=1
+par=sizeR        rng=sizeR!A2:B4      rdim=1
+par=ra           rng=ra!A2:B7         rdim=1
+par=raR          rng=raR!A2:B4        rdim=1
+par=p_min        rng=p_min!A2:B7      rdim=1
+par=c_e          rng=c_e!A2:B7        rdim=1
+par=c_vom        rng=c_vom!A2:B7      rdim=1
+par=q_e          rng=q_e!A2:B7        rdim=1
+par=c_fn         rng=c_fn!A2:B7       rdim=1
+par=fuelPrice    rng=fuelPrice!A2:B7  rdim=1
+par=emisPrice    rng=emisPrice!A2:B7  rdim=1

@@ -1,0 +1,5 @@
+par=d                    rng=d!A2:B8761                  rdim=1
+par=wind_Onshore         rng=wind_Onshore!A2:B8761       rdim=1
+par=wind_Offshore        rng=wind_Offshore!A2:B8761      rdim=1
+par=pv                   rng=pv!A2:B8761                 rdim=1
+par=hydro                rng=hydro!A2:B8761              rdim=1

@@ -1,0 +1,350 @@
+
+--- Job FinalAssignment.gms Start 12/08/19 01:21:44 28.2.0 r750fa45 WEX-WEI x86 64bit/MS Windows
+--- GAMS Parameters defined
+    LP CPLEX
+    MIP CPLEX
+    RMIP CPLEX
+    QCP CPLEX
+    MIQCP CPLEX
+    RMIQCP CPLEX
+    Input C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\FinalAssignment.gms
+    PageWidth 80
+    PageSize 0
+    PageContr 3
+    Action CE
+    ScrDir C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\225a\
+    SysDir C:\Program Files (x86)\GAMS\28.2\
+    WorkDir C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\
+    LogOption 3
+    DFormat 0
+    TFormat 0
+    ErrorLog 99
+    IDE 1
+GAMS 28.2.0   Copyright (C) 1987-2019 GAMS Development. All rights reserved
+Licensee: Course License Fall 2019                       G190805/0001AO-GEN
+          Technical University of Denmark, Management Engineering    DCE146
+          License for teaching and research at degree granting institutions
+          License Admin: Thomas Stidsen, thst@man.dtu.dk                   
+--- Starting compilation
+--- FinalAssignment.gms(54) 3 Mb
+--- call gdxxrw.exe TechnologyData.xlsx maxDupeErrors=8760 @TechnologyData.txt
+
+GDXXRW           28.2.0 r750fa45 Released Aug 19, 2019 VS8 x86 32bit/MS Window
+Input file : C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\TechnologyData.xlsx
+Output file: C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\TechnologyData.gdx
+Total time = 2031 Ms
+--- FinalAssignment.gms(55) 3 Mb
+--- GDXin=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\TechnologyData.gdx
+--- FinalAssignment.gms(66) 3 Mb
+--- call gdxxrw.exe Demand_Profiles.xlsx maxDupeErrors=8760 @Demand_Profiles.txt
+
+GDXXRW           28.2.0 r750fa45 Released Aug 19, 2019 VS8 x86 32bit/MS Window
+Input file : C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\Demand_Profiles.xlsx
+Output file: C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\Demand_Profiles.gdx
+Total time = 2359 Ms
+--- FinalAssignment.gms(67) 3 Mb
+--- GDXin=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\Demand_Profiles.gdx
+--- FinalAssignment.gms(80) 5 Mb
+--- call gdxxrw.exe TechnologyData_Hydrogen.xlsx maxDupeErrors=8760 @TechnologyData_Hydrogen.txt
+
+GDXXRW           28.2.0 r750fa45 Released Aug 19, 2019 VS8 x86 32bit/MS Window
+Input file : C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\TechnologyData_Hydrogen.xlsx
+Output file: C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\TechnologyData_Hydrogen.gdx
+Total time = 1391 Ms
+--- FinalAssignment.gms(81) 5 Mb
+--- GDXin=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\TechnologyData_Hydrogen.gdx
+--- FinalAssignment.gms(200) 5 Mb
+--- Starting execution: elapsed 0:00:06.526
+--- FinalAssignment.gms(159) 6 Mb
+--- Generating MIP model Carolina
+--- FinalAssignment.gms(140) 35 Mb  5 secs
+--- FinalAssignment.gms(152) 42 Mb  4 secs
+--- FinalAssignment.gms(164) 46 Mb
+---   201,488 rows  78,853 columns  463,087 non-zeroes
+---   12 discrete-columns
+--- Executing CPLEX: elapsed 0:00:18.913
+
+IBM ILOG CPLEX   28.2.0 r750fa45 Released Aug 19, 2019 WEI x86 64bit/MS Window
+--- GAMS/Cplex licensed for continuous and discrete problems.
+Cplex 12.9.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 7.22 Mb
+Use option 'names no' to turn use of names off
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_Simplex_Limits_Iterations               2000000000
+CPXPARAM_TimeLimit                               1000
+CPXPARAM_Tune_TimeLimit                          200
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_WorkDir                                 "C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\225a\"
+Tried aggregator 2 times.
+MIP Presolve eliminated 96375 rows and 8766 columns.
+Aggregator did 6 substitutions.
+Reduced MIP has 105107 rows, 70081 columns, and 305368 nonzeros.
+Reduced MIP has 0 binaries, 11 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.28 sec. (162.74 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 105107 rows, 70081 columns, and 305368 nonzeros.
+Reduced MIP has 0 binaries, 11 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.27 sec. (131.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =            -0.000000
+Iteration:   967   Dual objective     =     180243449.889851
+Perturbation started.
+Iteration:  1111   Dual objective     =     187566988.892633
+Iteration:  1774   Dual objective     =     218798993.505773
+Iteration:  2943   Dual objective     =     308182966.396320
+Iteration:  3378   Dual objective     =     314022062.878279
+Iteration:  4574   Dual objective     =     361004001.627160
+Iteration:  5217   Dual objective     =     401160204.115456
+Iteration:  6370   Dual objective     =     459051277.502360
+Iteration:  7020   Dual objective     =     505812970.084529
+Iteration:  8160   Dual objective     =     595880252.829907
+Iteration:  8617   Dual objective     =     628302236.712353
+Iteration:  9897   Dual objective     =     772226831.054031
+Iteration: 10458   Dual objective     =     824802609.429407
+Iteration: 11489   Dual objective     =     907041279.474065
+Iteration: 11900   Dual objective     =     961291332.450657
+Iteration: 13289   Dual objective     =    1278994978.665942
+Iteration: 13724   Dual objective     =    1368626993.162408
+Iteration: 14987   Dual objective     =    1537427117.740488
+Iteration: 15351   Dual objective     =    1582280351.028884
+Iteration: 16513   Dual objective     =    1689515759.901310
+Iteration: 16771   Dual objective     =    1730021156.809019
+Iteration: 18094   Dual objective     =    1972790111.259503
+Iteration: 18557   Dual objective     =    2039292749.374486
+Iteration: 19244   Dual objective     =    2216640014.858758
+Iteration: 19971   Dual objective     =    2374417071.702598
+Iteration: 20337   Dual objective     =    2474113057.185723
+Iteration: 20862   Dual objective     =    2586445860.523619
+Iteration: 22853   Dual objective     =    2961227979.997705
+Iteration: 23249   Dual objective     =    3041613207.939366
+Iteration: 24597   Dual objective     =    3364475199.362509
+Iteration: 25002   Dual objective     =    3449663645.222228
+Iteration: 25756   Dual objective     =    3610909677.352361
+Iteration: 26190   Dual objective     =    3695705933.489181
+Iteration: 27744   Dual objective     =    3992689584.313595
+Iteration: 28156   Dual objective     =    4061853925.772478
+Iteration: 29644   Dual objective     =    4328756058.020057
+Iteration: 30097   Dual objective     =    4389449815.658914
+Iteration: 31729   Dual objective     =    4573975071.901320
+Iteration: 32017   Dual objective     =    5859168189.831268
+Iteration: 32462   Dual objective     =    7081313348.695230
+Iteration: 32928   Dual objective     =    7186615176.595010
+Iteration: 33776   Dual objective     =    8618864357.957731
+Iteration: 34154   Dual objective     =    8643480652.951988
+Iteration: 34888   Dual objective     =    9159830757.610003
+Elapsed time = 6.88 sec. (10000.46 ticks, 35408 iterations)
+Iteration: 35832   Dual objective     =    9624501156.919363
+Iteration: 36162   Dual objective     =    9653306158.249712
+Iteration: 36855   Dual objective     =    9983889884.755478
+Iteration: 37214   Dual objective     =   10024968464.495974
+Iteration: 38041   Dual objective     =   10817874525.313328
+Iteration: 38869   Dual objective     =   11028405596.760077
+Iteration: 39507   Dual objective     =   11275251522.466803
+Iteration: 40329   Dual objective     =   11314861986.303644
+Iteration: 40712   Dual objective     =   11339591000.263830
+Iteration: 41171   Dual objective     =   12083060312.788408
+Iteration: 41673   Dual objective     =   12313468016.919487
+Iteration: 42293   Dual objective     =   12591806351.045975
+Iteration: 42752   Dual objective     =   12625911805.543821
+Iteration: 43167   Dual objective     =   13038472751.698689
+Iteration: 43829   Dual objective     =   13919768853.214191
+Iteration: 44031   Dual objective     =   14045868220.333910
+Iteration: 44222   Dual objective     =   14388688402.776701
+Iteration: 44738   Dual objective     =   14504726401.500921
+Iteration: 45090   Dual objective     =   14561868553.705944
+Elapsed time = 15.22 sec. (20002.03 ticks, 45385 iterations)
+Iteration: 45471   Dual objective     =   14627599952.469383
+Iteration: 45776   Dual objective     =   14661381463.980259
+Iteration: 46082   Dual objective     =   14696593624.315699
+Iteration: 46367   Dual objective     =   14748097530.958555
+Iteration: 46675   Dual objective     =   14785556680.566906
+Iteration: 47008   Dual objective     =   14832532854.726654
+Iteration: 47331   Dual objective     =   14864761543.953150
+Iteration: 47640   Dual objective     =   16014510778.280537
+Markowitz threshold set to 0.1
+Iteration: 48098   Dual objective     =   16039739020.978832
+Markowitz threshold set to 0.5
+Iteration: 48417   Dual objective     =   16423723261.537685
+Iteration: 48705   Dual objective     =   16436040765.557459
+Iteration: 48970   Dual objective     =   16446418643.598095
+Iteration: 49234   Dual objective     =   16455874140.161707
+Iteration: 49497   Dual objective     =   16464823762.888235
+Iteration: 49762   Dual objective     =   16473997903.205503
+Iteration: 50027   Dual objective     =   16482691442.829906
+Iteration: 50290   Dual objective     =   16490666661.375494
+Elapsed time = 22.13 sec. (30003.04 ticks, 50402 iterations)
+Iteration: 50557   Dual objective     =   16499048918.882339
+Iteration: 50821   Dual objective     =   16506499461.268976
+Iteration: 51085   Dual objective     =   16514085550.858795
+Iteration: 51350   Dual objective     =   16521772683.421700
+Iteration: 51613   Dual objective     =   16529360525.201311
+Iteration: 51878   Dual objective     =   16536730329.601768
+Iteration: 52146   Dual objective     =   16544632182.001175
+Iteration: 52412   Dual objective     =   16553420027.823826
+Iteration: 52678   Dual objective     =   16561578450.825151
+Iteration: 52942   Dual objective     =   16570235795.716656
+Iteration: 53205   Dual objective     =   16577331737.861773
+Iteration: 53476   Dual objective     =   16584862539.111704
+Iteration: 53744   Dual objective     =   16593146061.730446
+Iteration: 54009   Dual objective     =   16600332145.192503
+Iteration: 54292   Dual objective     =   16609463851.622602
+Iteration: 54674   Dual objective     =   16617013730.846113
+Elapsed time = 29.67 sec. (40003.34 ticks, 55013 iterations)
+Iteration: 55192   Dual objective     =   16777991002.614714
+Iteration: 55710   Dual objective     =   16868713239.996162
+Iteration: 55980   Dual objective     =   16874046233.509192
+Iteration: 56167   Dual objective     =   16887526079.771513
+Iteration: 56955   Dual objective     =   16940042623.782406
+Iteration: 57616   Dual objective     =   17284548805.175163
+Iteration: 58118   Dual objective     =   17486267335.638058
+Iteration: 58571   Dual objective     =   17503368862.120911
+Iteration: 59023   Dual objective     =   17522793630.222919
+Iteration: 59633   Dual objective     =   17539644437.056892
+Iteration: 60133   Dual objective     =   17549925911.294838
+Elapsed time = 37.89 sec. (50004.54 ticks, 60340 iterations)
+Removing perturbation.
+Root relaxation solution time = 38.06 sec. (50191.97 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   1.75502e+10     7                 1.75502e+10    60425         
+*     0+    0                       1.77451e+10   1.75502e+10             1.10%
+Found incumbent of value 1.7745120e+10 after 39.66 sec. (51208.47 ticks)
+      0     0   1.75642e+10     6   1.77451e+10    Cuts: 2976    61824    1.02%
+*     0+    0                       1.77362e+10   1.75642e+10             0.97%
+Found incumbent of value 1.7736217e+10 after 41.92 sec. (54342.52 ticks)
+      0     0   1.75647e+10     6   1.77362e+10    MIRcuts: 4    61875    0.97%
+      0     0   1.75660e+10     6   1.77362e+10   MIRcuts: 10    61972    0.96%
+      0     0   1.75660e+10     6   1.77362e+10   MIRcuts: 10    61977    0.96%
+      0     2   1.75660e+10     6   1.77362e+10   1.75660e+10    61977    0.96%
+Elapsed time = 46.78 sec. (59069.86 ticks, tree = 0.01 MB, solutions = 2)
+      2     4   1.76145e+10     5   1.77362e+10   1.75660e+10    63034    0.96%
+      3     5   1.75779e+10     5   1.77362e+10   1.75660e+10    68005    0.96%
+      6     8   1.75864e+10     2   1.77362e+10   1.75660e+10    68710    0.96%
+*     8     4      integral     0   1.75864e+10   1.75660e+10    68726    0.12%
+Found incumbent of value 1.7586408e+10 after 51.09 sec. (66149.58 ticks)
+      9     3        cutoff         1.75864e+10   1.75660e+10    68735    0.12%
+     10     4   1.75661e+10     5   1.75864e+10   1.75661e+10    68774    0.12%
+                                                   MIRcuts: 1                  
+     11     5   1.75774e+10     5   1.75864e+10   1.75661e+10    73603    0.12%
+
+Mixed integer rounding cuts applied:  2972
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =   46.78 sec. (59067.88 ticks)
+Sequential b&c:
+  Real time             =    5.95 sec. (10124.56 ticks)
+                          ------------
+Total (root+branch&cut) =   52.73 sec. (69192.44 ticks)
+MIP status(102): integer optimal, tolerance
+Cplex Time: 52.73sec (det. 69192.67 ticks)
+Fixing integer variables, and solving final LP...
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_Simplex_Limits_Iterations               2000000000
+CPXPARAM_TimeLimit                               1000
+CPXPARAM_Tune_TimeLimit                          200
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_WorkDir                                 "C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 180947 rows and 40256 columns.
+Aggregator did 56 substitutions.
+Reduced LP has 20485 rows, 38541 columns, and 70822 nonzeros.
+Presolve time = 0.22 sec. (118.26 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =   16205350965.383204
+Iteration:  1287   Dual objective     =   16789797268.806532
+Iteration:  1942   Dual objective     =   16946862820.449743
+Iteration:  2567   Dual objective     =   17087387111.950134
+Iteration:  3196   Dual objective     =   17233485713.544010
+Iteration:  3805   Dual objective     =   17400956140.371788
+Iteration:  4365   Dual objective     =   17523703363.673244
+Iteration:  5196   Dual objective     =   17547704591.895744
+Iteration:  5982   Dual objective     =   17563441169.167152
+Iteration:  6720   Dual objective     =   17570251050.573841
+Iteration:  7363   Dual objective     =   17574690584.058456
+Perturbation started.
+Iteration:  7714   Dual objective     =   17575994773.698269
+Iteration:  8283   Dual objective     =   17578233351.410374
+Iteration:  8771   Dual objective     =   17580903111.596931
+Iteration:  9226   Dual objective     =   17582810444.258392
+Iteration:  9689   Dual objective     =   17584988835.776360
+Iteration: 10071   Dual objective     =   17585366459.282551
+Iteration: 10348   Dual objective     =   17585969457.696846
+Iteration: 10561   Dual objective     =   17586407968.719528
+Markowitz threshold set to 0.1
+Iteration: 10581   Dual objective     =   17586407968.719528
+Removing perturbation.
+Iteration: 10586    Objective     =   17586407958.216011
+Fixed MIP status(1): optimal
+Cplex Time: 0.64sec (det. 635.72 ticks)
+
+Solution satisfies tolerances.
+
+MIP Solution:  17586407958.175194    (73692 iterations, 13 nodes)
+Final Solve:   17586407958.174648    (10622 iterations)
+
+Best possible: 17577384701.781815
+Absolute gap:      9023256.393379
+Relative gap:            0.000513
+
+--- Restarting execution
+--- FinalAssignment.gms(164) 12 Mb
+--- Reading solution for model Carolina
+--- FinalAssignment.gms(164) 25 Mb
+--- Executing after solve: elapsed 0:01:14.020
+--- FinalAssignment.gms(194) 26 Mb
+--- GDX File C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\results.gdx
+--- FinalAssignment.gms(196) 26 Mb
+
+GDXXRW           28.2.0 r750fa45 Released Aug 19, 2019 VS8 x86 32bit/MS Window
+Input file : C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\results.gdx
+Output file: C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\results.xlsx
+Total time = 10016 Ms
+--- FinalAssignment.gms(197) 26 Mb
+
+GDXXRW           28.2.0 r750fa45 Released Aug 19, 2019 VS8 x86 32bit/MS Window
+Input file : C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\results.gdx
+Output file: C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\results.xlsx
+Total time = 10547 Ms
+--- FinalAssignment.gms(198) 26 Mb
+
+GDXXRW           28.2.0 r750fa45 Released Aug 19, 2019 VS8 x86 32bit/MS Window
+Input file : C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\results.gdx
+Output file: C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\results.xlsx
+Total time = 9187 Ms
+--- FinalAssignment.gms(199) 26 Mb
+
+GDXXRW           28.2.0 r750fa45 Released Aug 19, 2019 VS8 x86 32bit/MS Window
+Input file : C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\results.gdx
+Output file: C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\results.xlsx
+Total time = 8937 Ms
+--- FinalAssignment.gms(200) 26 Mb
+
+GDXXRW           28.2.0 r750fa45 Released Aug 19, 2019 VS8 x86 32bit/MS Window
+Input file : C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\results.gdx
+Output file: C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\results.xlsx
+Total time = 8953 Ms
+--- Putfile results C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\results.txt
+--- Putfile resultsH C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\resultsH.txt
+*** Status: Normal completion
+--- Job FinalAssignment.gms Stop 12/08/19 01:23:47 elapsed 0:02:02.999

@@ -1,0 +1,173 @@
+[PROJECT]
+
+[RP:UNTITLED_1]
+1=
+
+[RP:MONTALVO_PART2BB]
+1=
+
+[RP:MONTALVO_PART2]
+1=
+
+[SOLVERS]
+LP=CPLEX
+MIP=CPLEX
+MIQCP=CPLEX
+QCP=CPLEX
+RMIP=CPLEX
+RMIQCP=CPLEX
+
+[GDXDISP: d Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: pv_NC Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: pv_SC Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: wind_NC Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: wind_SC Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: c_e Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=0
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: c_f Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: c_fn Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: c_vom Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: n Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: q_e Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[RP:WHITT]
+1=
+
+[RP:GAMSTUTORIALEX_ACTUAL]
+1=
+
+[RP:TRANSPORTATION]
+1=
+
+[RP:BARS]
+1=
+
+[RP:CHORES]
+1=
+
+[RP:DIET]
+1=
+
+[RP:SUDOKU]
+1=
+
+[RP:WEENIES_BUNS]
+1=
+
+[RP:EXERCISE1]
+1=
+
+[RP:ED]
+1=
+
+[RP:GAMSTUTORIALEX]
+1=
+
+[RP:FINALASSIGNMENT]
+1=
+
+[MRUFILES]
+1=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Lecture 5\GAMSTutorialEx.gms
+2=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Lecture 5\EDinClass\ED.gms
+3=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Lecture 7\Exercise1.gms
+4=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Lecture 5\Error-exercise\Weenies_buns.gms
+5=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Lecture 5\Error-exercise\sudoku.gms
+6=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Lecture 5\Error-exercise\diet.gms
+7=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Lecture 6\Chores.gms
+8=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Lecture 6\Bars.gms
+
+[OPENWINDOW_1]
+FILE0=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\FinalAssignment.gms
+FILE1=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\FinalAssignment.lst
+FILE2=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Final Project\Model\FinalAssignment.gms
+MAXIM=1
+TOP=-10
+LEFT=54
+HEIGHT=730
+WIDTH=1461

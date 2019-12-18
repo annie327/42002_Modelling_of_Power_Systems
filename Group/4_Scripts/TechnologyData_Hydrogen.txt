@@ -1,0 +1,6 @@
+par=invH         rng=invH!A2:B4       rdim=1
+par=sizeH        rng=sizeH!A2:B4      rdim=1
+par=p_minH       rng=p_minH!A2:B4     rdim=1
+par=c_fom        rng=c_fom!A2:B4      rdim=1
+par=n            rng=n!A2:B4          rdim=1
+par=HInv         rng=HInv!A2:B4       rdim=1
