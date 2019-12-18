@@ -1,0 +1,75 @@
+
+--- Job Montalvo_Part2.gms Start 10/24/19 23:46:05 28.2.0 r750fa45 WEX-WEI x86 64bit/MS Windows
+--- GAMS Parameters defined
+    Input C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Assignment 1\Montalvo_Part2.gms
+    PageWidth 80
+    PageSize 0
+    PageContr 3
+    Action CE
+    ScrDir C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Assignment 1\225a\
+    SysDir C:\Program Files (x86)\GAMS\28.2\
+    WorkDir C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Assignment 1\
+    LogOption 3
+    DFormat 0
+    TFormat 0
+    ErrorLog 99
+    IDE 1
+GAMS 28.2.0   Copyright (C) 1987-2019 GAMS Development. All rights reserved
+Licensee: Course License Fall 2019                       G190805/0001AO-GEN
+          Technical University of Denmark, Management Engineering    DCE146
+          License for teaching and research at degree granting institutions
+          License Admin: Thomas Stidsen, thst@man.dtu.dk                   
+--- Starting compilation
+--- Montalvo_Part2.gms(8) 3 Mb
+--- call gdxxrw.exe InputExcel.xlsx par=e rng=Energy!A1:B24 rDim=1
+
+GDXXRW           28.2.0 r750fa45 Released Aug 19, 2019 VS8 x86 32bit/MS Window
+Input file : C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Assignment 1\InputExcel.xlsx
+Output file: C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Assignment 1\InputExcel.gdx
+Total time = 1672 Ms
+--- Montalvo_Part2.gms(9) 3 Mb
+--- GDXin=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Assignment 1\InputExcel.gdx
+--- Montalvo_Part2.gms(52) 3 Mb
+--- Starting execution: elapsed 0:00:02.102
+--- Montalvo_Part2.gms(45) 4 Mb
+--- Generating LP model happiness
+--- Montalvo_Part2.gms(49) 4 Mb
+---   5 rows  4 columns  13 non-zeroes
+--- Executing CPLEX: elapsed 0:00:02.184
+
+IBM ILOG CPLEX   28.2.0 r750fa45 Released Aug 19, 2019 WEI x86 64bit/MS Window
+Cplex 12.9.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+CPXPARAM_Advance                                 0
+CPXPARAM_Simplex_Display                         2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_Simplex_Limits_Iterations               2000000000
+CPXPARAM_TimeLimit                               1000
+CPXPARAM_Tune_TimeLimit                          200
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 1 columns.
+Reduced LP has 4 rows, 3 columns, and 9 nonzeros.
+Presolve time = 0.02 sec. (0.00 ticks)
+
+Iteration      Dual Objective            In Variable           Out Variable
+     1 sI            0.000000                      s             cs17 slack
+     2            4786.000000                      b             cs15 slack
+     3            3756.854922                      c             cs14 slack
+LP status(1): optimal
+Cplex Time: 0.09sec (det. 0.01 ticks)
+
+Optimal solution found.
+Objective :        3756.854922
+
+--- Restarting execution
+--- Montalvo_Part2.gms(49) 2 Mb
+--- Reading solution for model happiness
+--- Executing after solve: elapsed 0:00:02.536
+--- Montalvo_Part2.gms(52) 3 Mb
+*** Status: Normal completion
+--- Job Montalvo_Part2.gms Stop 10/24/19 23:46:08 elapsed 0:00:02.544

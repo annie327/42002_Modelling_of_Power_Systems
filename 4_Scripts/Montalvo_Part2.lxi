@@ -1,0 +1,33 @@
+B 3 C o m p i l a t i o n
+B 60 Include File Summary
+B 82 Equation Listing    SOLVE happiness Using LP From line 49
+D 85 Obj
+D 90 cs14
+D 95 cs15
+D 100 cs16
+D 105 cs17
+B 111 Column Listing      SOLVE happiness Using LP From line 49
+E 114 H
+E 121 s
+E 132 c
+E 142 b
+B 152 Model Statistics    SOLVE happiness Using LP From line 49
+B 168 Solution Report     SOLVE happiness Using LP From line 49
+F 197 Obj
+F 198 cs14
+F 199 cs15
+F 200 cs16
+F 201 cs17
+G 211 H
+G 212 s
+G 213 c
+G 214 b
+B 227 E x e c u t i o n
+I 229 H
+I 231 s
+I 232 c
+I 233 b
+I 234 cs14
+I 235 cs15
+I 236 cs16
+I 237 cs17

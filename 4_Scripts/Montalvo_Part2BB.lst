@@ -1,0 +1,227 @@
+GAMS 28.2.0  r750fa45 Released Aug 19, 2019 WEX-WEI x86 64bit/MS Windows 10/24/19 09:52:04 Page 1
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+C o m p i l a t i o n
+
+
+   1  Free Variables
+   2  H        Happiness (objective) function value
+   3  ;
+   4   
+   5  Positive Variables
+   6  *Integer Variables
+   7  y1        customer 1
+   8  y2        customer 2
+   9  ;
+  10   
+  11  Equations
+  12  Obj       objective function
+  13  cs1      constraint 1
+  14  cs2      constraint 2
+  15  cs3      constraint 3
+  16  cs4      constraint 4
+  17  cs5      constraint 5
+  18  cs6      constraint 6
+  19  cs7      constraint 7
+  20  cs8      constraint 8
+  21  ;
+  22   
+  23  Obj ..   H =e= 12*y1+23*y2;
+  24   
+  25  cs1 ..   4*y1+7*y2 =l= 63;
+  26  cs2 ..   y1 =g= 2;
+  27  cs3 ..   y2 =g= 3;
+  28  cs4 ..   y2 =l= 7;
+  29  cs5 ..   y1 =g= 4;
+  30  cs6 ..   y2 =l= 6;
+  31  cs7 ..   y1 =g= 6;
+  32  cs8 ..   y2 =l= 5;
+  33   
+  34  model happiness /all/;
+  35   
+  36  solve happiness using LP maximizing H;
+  37  *solve happiness using MIP maximizing H;
+
+
+COMPILATION TIME     =        0.000 SECONDS      2 MB  28.2.0 r750fa45 WEX-WEI
+GAMS 28.2.0  r750fa45 Released Aug 19, 2019 WEX-WEI x86 64bit/MS Windows 10/24/19 09:52:04 Page 2
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Equation Listing    SOLVE happiness Using LP From line 36
+
+
+---- Obj  =E=  objective function
+
+Obj..  H - 12*y1 - 23*y2 =E= 0 ; (LHS = 0)
+     
+
+---- cs1  =L=  constraint 1
+
+cs1..  4*y1 + 7*y2 =L= 63 ; (LHS = 0)
+     
+
+---- cs2  =G=  constraint 2
+
+cs2..  y1 =G= 2 ; (LHS = 0, INFES = 2 ****)
+     
+
+---- cs3  =G=  constraint 3
+
+cs3..  y2 =G= 3 ; (LHS = 0, INFES = 3 ****)
+     
+
+---- cs4  =L=  constraint 4
+
+cs4..  y2 =L= 7 ; (LHS = 0)
+     
+
+---- cs5  =G=  constraint 5
+
+cs5..  y1 =G= 4 ; (LHS = 0, INFES = 4 ****)
+     
+
+---- cs6  =L=  constraint 6
+
+cs6..  y2 =L= 6 ; (LHS = 0)
+     
+
+---- cs7  =G=  constraint 7
+
+cs7..  y1 =G= 6 ; (LHS = 0, INFES = 6 ****)
+     
+
+---- cs8  =L=  constraint 8
+
+cs8..  y2 =L= 5 ; (LHS = 0)
+     
+GAMS 28.2.0  r750fa45 Released Aug 19, 2019 WEX-WEI x86 64bit/MS Windows 10/24/19 09:52:04 Page 3
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Column Listing      SOLVE happiness Using LP From line 36
+
+
+---- H  Happiness (objective) function value
+
+H
+                (.LO, .L, .UP, .M = -INF, 0, +INF, 0)
+        1       Obj
+
+
+---- y1  customer 1
+
+y1
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+      -12       Obj
+        4       cs1
+        1       cs2
+        1       cs5
+        1       cs7
+
+
+---- y2  customer 2
+
+y2
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+      -23       Obj
+        7       cs1
+        1       cs3
+        1       cs4
+        1       cs6
+        1       cs8
+
+GAMS 28.2.0  r750fa45 Released Aug 19, 2019 WEX-WEI x86 64bit/MS Windows 10/24/19 09:52:04 Page 4
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Model Statistics    SOLVE happiness Using LP From line 36
+
+
+MODEL STATISTICS
+
+BLOCKS OF EQUATIONS           9     SINGLE EQUATIONS            9
+BLOCKS OF VARIABLES           3     SINGLE VARIABLES            3
+NON ZERO ELEMENTS            12
+
+
+GENERATION TIME      =        0.016 SECONDS      3 MB  28.2.0 r750fa45 WEX-WEI
+
+
+EXECUTION TIME       =        0.016 SECONDS      3 MB  28.2.0 r750fa45 WEX-WEI
+GAMS 28.2.0  r750fa45 Released Aug 19, 2019 WEX-WEI x86 64bit/MS Windows 10/24/19 09:52:04 Page 5
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Solution Report     SOLVE happiness Using LP From line 36
+
+
+               S O L V E      S U M M A R Y
+
+     MODEL   happiness           OBJECTIVE  H
+     TYPE    LP                  DIRECTION  MAXIMIZE
+     SOLVER  CPLEX               FROM LINE  36
+
+**** SOLVER STATUS     1 Normal Completion         
+**** MODEL STATUS      1 Optimal                   
+**** OBJECTIVE VALUE              199.0000
+
+ RESOURCE USAGE, LIMIT          0.016      1000.000
+ ITERATION COUNT, LIMIT         0    2000000000
+
+IBM ILOG CPLEX   28.2.0 r750fa45 Released Aug 19, 2019 WEI x86 64bit/MS Window
+Cplex 12.9.0.0
+
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+LP status(1): optimal
+Cplex Time: 0.00sec (det. 0.00 ticks)
+Optimal solution found.
+Objective :         199.000000
+
+
+                       LOWER     LEVEL     UPPER    MARGINAL
+
+---- EQU Obj             .         .         .        1.000      
+---- EQU cs1            -INF     63.000    63.000     3.000      
+---- EQU cs2            2.000     7.000     +INF       .         
+---- EQU cs3            3.000     5.000     +INF       .         
+---- EQU cs4            -INF      5.000     7.000      .         
+---- EQU cs5            4.000     7.000     +INF       .         
+---- EQU cs6            -INF      5.000     6.000      .         
+---- EQU cs7            6.000     7.000     +INF       .         
+---- EQU cs8            -INF      5.000     5.000     2.000      
+
+  Obj  objective function
+  cs1  constraint 1
+  cs2  constraint 2
+  cs3  constraint 3
+  cs4  constraint 4
+  cs5  constraint 5
+  cs6  constraint 6
+  cs7  constraint 7
+  cs8  constraint 8
+
+                       LOWER     LEVEL     UPPER    MARGINAL
+
+---- VAR H              -INF    199.000     +INF       .         
+---- VAR y1              .        7.000     +INF       .         
+---- VAR y2              .        5.000     +INF       .         
+
+  H  Happiness (objective) function value
+  y1  customer 1
+  y2  customer 2
+
+
+**** REPORT SUMMARY :        0     NONOPT
+                             0 INFEASIBLE
+                             0  UNBOUNDED
+
+
+EXECUTION TIME       =        0.000 SECONDS      2 MB  28.2.0 r750fa45 WEX-WEI
+
+
+USER: Course License Fall 2019                       G190805/0001AO-GEN
+      Technical University of Denmark, Management Engineering    DCE146
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis
+           of Sustainable Energy Systems using Operations Research\Assignment 1\
+           Montalvo_Part2BB.gms
+Output     C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis
+           of Sustainable Energy Systems using Operations Research\Assignment 1\
+           Montalvo_Part2BB.lst

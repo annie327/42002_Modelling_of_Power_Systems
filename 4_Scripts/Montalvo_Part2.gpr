@@ -1,0 +1,61 @@
+[PROJECT]
+
+[GDXDISP: e Par 2]
+PlaneDim=0
+RowDim=2
+Squeeze=1
+SqTrail0=0
+Order=1,2
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: e Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[RP:11.1-2]
+1=
+
+[RP:11.1-6]
+1=
+
+[RP:GAMSTUTORIALEX]
+1=
+
+[RP:ED]
+1=
+
+[RP:WYNDORGLASS]
+1=
+
+[RP:UNTITLED_1]
+1=
+
+[OPENWINDOW_1]
+MAXIM=0
+TOP=-14
+LEFT=62
+HEIGHT=722
+WIDTH=1252
+
+[RP:MONTALVO_PART2BB]
+1=
+
+[RP:MONTALVO_PART2]
+1=
+
+[MRUFILES]
+1=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Assignment 1\Montalvo_Part2BB.lst
+2=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Assignment 1\Montalvo_Part2BB.gms
+3=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Assignment 1\Montalvo_Part2.lst
+4=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Assignment 1\Montalvo_Part2.gms
+5=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Assignment 1\Untitled_1.gms
+6=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Solutions\WyndorGlass.gms
+7=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Lecture 4\EDinClass\ED.gms
+8=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Exercises\GAMSTutorialEx.gms
+9=C:\Users\jorge\OneDrive\Documentos\DTU\Courses\Modelling and Analysis of Sustainable Energy Systems using Operations Research\Assignment 1\ED.lst
