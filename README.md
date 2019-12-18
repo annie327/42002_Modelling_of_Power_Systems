@@ -1,5 +1,5 @@
 # 42002 - Modelling and Analysis of Sustainable Energy Systems using Operations Research
-This repository is intended for the group assignments of the course '42002 - Modelling and Analysis of Sustainable Energy Systems using Operations Research' at the Technical University of Denmark (DTU). It contains the GAMS scripts and data for the individual assignment and the final project.
+This repository is intended for the individual and group project of the course '42002 - Modelling and Analysis of Sustainable Energy Systems using Operations Research' at the Technical University of Denmark (DTU). It contains the GAMS scripts and data used on both assignments.
 
 # Program
 Both projects are coded in [GAMS](https://www.gams.com/)
